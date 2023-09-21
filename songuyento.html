@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <script>
+        // function checkNT (max) {
+            let count = 0;
+            let max = prompt("Nhập n số nguyên tố đầu tiên");
+            let N = 2;
+
+            while(count < max) {
+                let countUoc = 0;
+                for(let i = 2; i < N; i++) {
+                    if(N % i === 0) {
+                        countUoc++;
+                    }
+                }
+                if(countUoc == 0) {
+                    document.write("Số thứ " + (count + 1) + " là " + N + "<br>");
+                    count++;
+                }
+
+                N++;
+            }
+        // }
+
+        // checkNT(20);
+
+     </script>
+  </body>
+</html>
